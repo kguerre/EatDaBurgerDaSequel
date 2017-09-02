@@ -1,8 +1,8 @@
-# EatDaBurger
+# EatDaBurgerDa Sequel
 
 ### Overview
 
-In this assignment, we created a burger logger using MySQL, Node, Express, Handlebars, and ORMs.
+In this assignment, we created a burger logger using MySQL, Node, Express, Handlebars, and Sequelize.
 
 ### Application
 
