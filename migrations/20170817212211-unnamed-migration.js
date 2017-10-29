@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-  // on migration, create the table based on our model
   up: function(queryInterface, Sequelize) {
     return queryInterface.createTable("Burgers", {
       id: {
@@ -14,7 +13,7 @@ module.exports = {
       },
       devoured: {
         type: Sequelize.BOOLEAN,
-        defaultValue: false // this is the only line we needed to add manually
+        defaultValue: false
       },
       createdAt: {
         allowNull: false,
@@ -26,7 +25,6 @@ module.exports = {
       }
     });
   },
-  // on migrate:undo, drop the table
   down: function(queryInterface, Sequelize) {
     return queryInterface.dropTable("Burgers");
   }
